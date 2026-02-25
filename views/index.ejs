@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>App Idea Generator</title>
+	<link rel="stylesheet" href="/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrap">
+		<header class="hero">
+			<div class="hero-bg" id="heroBg" aria-hidden="true"></div>
+			<div class="hero-deco" aria-hidden="true">
+				<svg width="560" height="220" viewBox="0 0 560 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<linearGradient id="g1" x1="0" x2="1">
+							<stop offset="0" stop-color="#8b5cf6" />
+							<stop offset="1" stop-color="#06b6d4" />
+						</linearGradient>
+					</defs>
+					<path d="M0 120 C100 0 300 220 560 60 L560 220 L0 220 Z" fill="url(#g1)" opacity="0.15" />
+				</svg>
+			</div>
+			<h1>App Idea Generator</h1>
+			<p class="subtitle">Enter a prompt and get a creative, structured app idea</p>
+		</header>
+
+		<main class="panel">
+			<form id="idea-form">
+				<textarea id="prompt" placeholder="E.g. fitness + social + gamification" required></textarea>
+				<button id="generate" type="submit">Generate Idea</button>
+			</form>
+
+			<div id="result" class="result hidden">
+				<div class="loader" id="loader"></div>
+				<div id="idea-output" class="idea-output"></div>
+			</div>
+		</main>
+
+		<footer class="foot">Made with creativity • Built by you</footer>
+	</div>
+
+	<script src="/script.js"></script>
+</body>
+</html>
